@@ -1,0 +1,204 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<!--<meta http-equiv="refresh" content="10">-->
+	<meta name="author" content="Jordi Mas">
+	<meta name="description" content="Pàgina web per apendre HTML">
+	<title>HTML Tutorial</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize_style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="headerTuto">
+            <!-- Panell capçalera -->
+            <table style="width: 100%">
+                    <tr>
+                            <td><h2 title="Tooltip">Això és un tutorial per apendre HTML. Actualment estàs en aquest <a href="http://www.w3schools.com/html/default.asp" target="_blank">punt</a></h2></td>
+                            <td><a href="#tips"><img src="images/piu.png"></a></td>	
+                    </tr>
+            </table>
+        </div>
+        <div class="panelTuto"><a id="tips"></a>
+            <!-- Panell de treball -->
+            <div class="tutoItem">
+                    <h1 style="text-align: center">Pàgina web per apendre HTML</h1>
+                    <br>
+                    <h2>Capçaleres</h2>
+                    <h1>My First Heading 1</h1>
+                    <h2>My First Heading 2</h2>
+                    <h3>My First Heading 3</h3>
+                    <h4>My First Heading 4</h4>
+                    <h5>My First Heading 5</h5>
+                    <h6>My First Heading 6</h6>
+                    <hr>
+            </div>
+            <!-- Texts i formats -->
+            <div class="tutoItem">
+                    <h2>Texts i formats</h2>
+                    <p>My first paragraph.</p>	
+                    
+                    Format <b>negreta</b>
+                    <br>
+                    Format <em>emfasi</em>
+                    <br>
+                    Format <i>italic</i>
+                    <br>
+                    Format <small>petit</small>
+                    <br>
+                    Format <strong>important</strong>
+                    <br>
+                    Format <sub>subindex</sub>
+                    <br>
+                    Format <sup>superindex</sup>
+                    <br>
+                    Format <ins>subrallat</ins>
+                    <br>
+                    Format <del>esborrat</del>
+                    <br>
+                    <code>int i= 87;</code>
+                    <br>
+                    <kbd>keyboard</kbd>
+                    <br>
+                    <samp>sample</samp>
+                    <br>
+                    <var>variable</var>
+                    <br>
+                    <pre>preformat</pre>
+                    <br>
+                    <abbr>abrebiatura o acrònim</abbr>
+                    <br>
+                    <address>author o informació de contacte</address>
+                    <br>
+                    <bdo>direcció del text</bdo>
+                    <br>
+                    <blockquote>quoted</blockquote>
+                    <br>
+                    <q>inline</q>
+                    <br>
+                    <cite>citacions</cite>
+                    <br>
+                    <dfn>definició</dfn>
+                    <hr>
+            </div>
+            <!-- Links -->
+            <div class="tutoItem">
+                    <h2>Links</h2>
+                    <a href="http://www.google.es">Link ordinari</a>
+                    <a href="http://www.google.es"><img src="images/google.png"></a>
+                    <a href="mailto:gollums1@gmail.com">Envia mail</a><br>
+                    <a href="#tips">Anar a l'inici</a>
+                    <hr>
+            </div>
+            <!-- Imatges -->
+            <div class="tutoItem">
+                    <h2>Imatges</h2>
+                    <img src="images/pinocho.jpg" alt="ola k ase">
+                    <hr>
+            </div>
+            <!-- Taules -->
+            <div class="tutoItem">
+                    <h2>Taules</h2>
+                    <table style="width: 100%" border="1">
+                    <tr>
+                            <th>Tracte</th>
+                            <th>Nom</th>
+                            <th>Primer Cognom</th>
+                            <th>Segon Cognom</th>			
+                    </tr>
+                    <tr>
+                            <td>Sr</td>
+                            <td>Jordi</td>
+                            <td>Mas</td>
+                            <td>Guday</td>		
+                    </tr>
+                    <tr>
+                            <td>Sra</td>
+                            <td>Elisenda</td>
+                            <td>Ma<span style="color:red; margin: none ! important">s</span>sot</td>
+                            <td>Gil</td>		
+                    </tr>
+                    </table>
+                    <hr>
+            </div>
+	
+            <!-- Llistes -->
+            <div class="tutoItem">
+                    <h2>Llistes</h2>
+                    <ul>
+                            <li>Desordre 1</li>
+                            <li>Desordre 2</li>
+                            <li>Desordre 3</li>		
+                    </ul>
+                    <ol>
+                            <li>Primer</li>
+                            <li>Segon</li>
+                            <li>Tercer</li>
+                    </ol>
+                    <hr>
+            </div>
+	
+            <!-- Formularis -->
+            <div class="tutoItem">
+                    <h2>Formularis</h2>
+                    <form>
+                            Nom: <input type="text" name="nom"><br>
+                            Primer cognom: <input type="text" name="primerCognom"><br>
+                            Segon cognom: <input type="text" name="segonCognom"><br>
+                            Password: <input type="password" name="mypwd"><br>
+                            Sexe: <input type="radio" name="sex" value="male">Masculí
+                            <input type="radio" name="sex" value="female">Femení<br>
+                            Transport: <input type="checkbox" name="vehicle" value="car">Tinc cotxe
+                            <input type="checkbox" name="vehicle" value="moto">Tinc moto<br>
+                    </form>
+                    <form name="input" action="html_form_action.asp" method="get">
+                            Usuari: <input type="text" name="user"><br>
+                            Password: <input type="password" name="loginPwd">
+                            <input type="submit" value="Login">
+                    </form>
+                    <hr>
+            </div>
+	
+            <!-- Scripts -->
+            <div class="tutoItem">
+                    <h2>Scripts</h2>
+                    <script>
+                            document.write("<h1>Ola k ase</h1>");
+                    </script>
+                    <noscript>
+                            Sorry, your browser does not support javascript
+                    </noscript>
+                    <hr>
+            </div>
+	
+            <!-- Frames -->
+            <div class="tutoItem">
+                    <h2>Frames</h2>
+                    <iframe src="http://www.km77.com" width="100%" height="300"></iframe>
+                    <hr>
+            </div>
+	
+            <!-- Caracters reservats -->
+            <div class="tutoItem">
+            <h2>Caràcters reservats</h2>
+                    <p>
+                            Els caràcters &lt i &gt son reservats i la seva representació s'ha de fer 
+                            mitjançant amb l'expressió <i>&nom_entitat</i> o <i>&#numero_entitat</i>.
+                    </p> 
+                    <hr>
+            </div>
+            
+            <!-- link cap a CSS -->
+            <div class="tutoItem">
+                <a href="index_css.html">Anar al tutorial de CSS</a>
+            </div>
+            <br>
+            
+        </div>
+    </body>
+</html>

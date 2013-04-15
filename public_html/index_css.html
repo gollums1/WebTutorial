@@ -1,0 +1,372 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<!--<meta http-equiv="refresh" content="10">-->
+	<meta name="author" content="Jordi Mas">
+	<meta name="description" content="Pàgina web per apendre CSS">
+	<title>CSS Tutorial</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize_style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+        <style>
+            .lorem_class_intern{
+                text-align: right;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="headerTuto">
+            <!-- Panell capçalera -->
+            <table style="width: 100%">
+                    <tr>
+                            <td><h2 title="Tooltip">Això és un tutorial per apendre CSS. Actualment estàs en aquest <a href="http://www.w3schools.com/css/default.asp" target="_blank">punt</a></h2></td>
+                            <td><a href="#tips"><img src="images/piu.png"></a></td>	
+                    </tr>
+            </table>
+        </div>
+        <div class="panelTuto"><a id="tips"></a>
+            <!-- Panell de treball -->
+            <h1 style="text-align: center">Pàgina web per apendre CSS</h1>
+            <br>
+            <!-- Selector Id -->
+            <div class="tutoItem">
+                <h2>Selector id</h2>
+                <h3>Paràgraf genèric</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                <h3>Paràgraf amb estil propi: id="lorem_p"</h3>
+                <p id="lorem_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                <hr>
+            </div>
+            
+            <!-- Selector class -->
+            <div class="tutoItem">
+                <h2>Selector class</h2>
+                <h3>Paràgraf genèric</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                <h3>Paràgraf amb estil d'una clase: class="lorem_class"</h3>
+                <p class="lorem_class">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                <hr>
+            </div>
+            
+            <!-- Selector class -->
+            <div class="tutoItem">
+                <h2>Maneres d'inserir estils CSS</h2>
+                <h3>Fulla d'estil externa - style.css</h3>
+                <p class="lorem_class">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                <h3>Fulla d'estil interna - &ltstyle&gt &lt/style&gt</h3>
+                <p class="lorem_class_intern">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                <h3>Estil en línia</h3>
+                <p style="text-align: center; font-weight: bold;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                <hr>
+            </div>
+            
+            <!-- Estils de fons -->
+            <div class="tutoItem">
+                <h2>Estil background</h2>
+                <h3>Color de fons</h3>
+                <div class="background_color"></div>
+                <h3>Imatge de fons</h3>
+                <div class="background_image"></div>
+                <h3>Imatges de fons amb repeticions horitzontals</h3>
+                <div class="background_image_rep_x"></div>
+                 <h3>Imatges de fons amb repeticions verticals</h3>
+                <div class="background_image_rep_y"></div>
+                <hr>
+            </div>
+            
+            <!-- Estils de text -->
+            <div class="tutoItem">
+                <h2>Estils de text</h2>
+                <h3>Color de text</h3>
+                <p class="text_color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                <h3>Alinemanet del text</h3>
+                <p class="text_align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                <h3>Transformació del text</h3>
+                <p class="text_ident">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                <p class="text_up">Donec tincidunt, est quis feugiat fringilla, ipsum mi convallis nunc, sed eleifend tortor mi et nisi. Quisque dictum vestibulum vehicula. Sed dictum ligula quis felis iaculis et gravida nulla sollicitudin. Nulla et auctor velit. Sed tortor nibh, eleifend a pulvinar placerat, molestie vitae erat. Pellentesque accumsan, leo eget sagittis dapibus, leo justo imperdiet metus, ac posuere lorem dolor sit amet mi. Nulla facilisi. Nam quis quam nunc. Donec sit amet dapibus mauris. Proin augue libero, hendrerit a semper in, feugiat non arcu. Maecenas non auctor dui. Praesent turpis orci, sagittis sed porttitor vitae, convallis et mi. Curabitur gravida congue dui in euismod. Maecenas quis leo eget dolor interdum rutrum. Nullam malesuada rutrum enim, id iaculis elit molestie et. Vivamus ut sem nec magna tempor congue at sollicitudin arcu.</p>
+                <hr>
+            </div>
+            
+            <!-- Estils de text -->
+            <div class="tutoItem">
+                <h2>Estils de font</h2>
+                <h3>Families de fonts</h3>
+                <p class="family_font">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                <h3>Estil de font</h3>
+                <p class="font_style">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                <h3>Tamany font</h3>
+                <p class="font_size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                <hr>
+            </div>
+            
+            <!-- Estils de text -->
+            <div class="tutoItem">
+                <h2>Estils de links</h2>
+                <a id="estil_a" href="http://www.w3schools.com/css/default.asp" target="_blank">Estil link</a>
+                <hr>
+            </div>
+            
+            <!-- Estils de text -->
+            <div class="tutoItem">
+                <h2>Estils de llistes</h2>
+                <ul class="list_square">
+                    <li>Llista</li>
+                    <li>quadrats</li>
+                </ul>
+                <ul class="list_disc">
+                    <li>Llista</li>
+                    <li>discs</li>
+                </ul>
+                <ol class="list_up_rom">
+                    <li>Llista</li>
+                    <li>ordenada</li>
+                    <li>lletres</li>
+                </ol>
+                <ul class="list_img">
+                    <li>Llista</li>
+                    <li>amb</li>
+                    <li>imatges</li>
+                </ul>
+                <hr>
+            </div>
+            
+            <!-- Estils de taules -->
+            <div class="tutoItem">
+                <h2>Estils de taules</h2>
+                <table class="table_style">
+                    <tr>
+                        <th>Tracte</th>
+                        <th>Nom</th>
+                        <th>Primer Cognom</th>
+                        <th>Segon Cognom</th>
+                    </tr>
+                    <tr>
+                        <td>Sr</td>
+                        <td>Jordi</td>
+                        <td>Mas</td>
+                        <td>Guday</td>
+                    </tr>
+                    <tr>
+                        <td>Sra</td>
+                        <td>Elisenda</td>
+                        <td>Massot</td>
+                        <td>Gil</td>
+                    </tr>
+                </table>
+                <hr>
+            </div>
+            
+            <!-- Box Model -->
+            <div class="tutoItem">
+                <h2>Model CSS Box</h2>
+                <div class="margin_box">
+                    <p>Margin</p>
+                    <div class="border_box">
+                        <p>Border</p>
+                        <div class="padding_box">
+                            <p>Padding</p>
+                            <div class="content_box">
+                                <p>Content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <!-- Border Style -->
+            <div class="tutoItem">
+                <h2>Border estil</h2>
+                <table>
+                    <tr>
+                        <td class="border_style_left">Inset</td>
+                        <td class="border_style_right">Outset</td>
+                    </tr>
+                </table>
+                <hr>
+            </div>
+            
+            <!-- Display Style -->
+            <div class="tutoItem">
+                <h2>Border estil</h2>
+                <h3>Visualització de tots els elements</h3>
+                <table style="width: 100%">
+                    <tr>
+                        <td><img src="images/nemo1.png"></td>
+                        <td><img src="images/nemo2.png"></td>
+                        <td><img src="images/nemo3.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Imatge 1</td>
+                        <td>Imatge 2</td>
+                        <td>Imatge 3</td>
+                    </tr>
+                </table>
+                <h3>Amagant un element</h3>
+                <table style="width: 100%">
+                    <tr>
+                        <td><img src="images/nemo1.png"></td>
+                        <td class="hidden_element"><img src="images/nemo2.png"></td>
+                        <td><img src="images/nemo3.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Imatge 1</td>
+                        <td class="hidden_element">Imatge 2</td>
+                        <td>Imatge 3</td>
+                    </tr>
+                </table>
+                <h3>No visualització d'un element</h3>
+                <table style="width: 100%">
+                    <tr>
+                        <td><img src="images/nemo1.png"></td>
+                        <td class="display_element"><img src="images/nemo2.png"></td>
+                        <td><img src="images/nemo3.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Imatge 1</td>
+                        <td class="display_element">Imatge 2</td>
+                        <td>Imatge 3</td>
+                    </tr>
+                </table>
+                <hr>
+            </div>
+            
+            <!-- Position CSS -->
+            <div class="tutoItem">
+                <h2>Posicionament</h2>
+                <div class="divZ1">
+                    <div class="divZ2">
+                        <div class="divZ3">
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <hr>
+            </div>
+            
+            <!-- Position CSS -->
+            <div class="tutoItem">
+                <h2>Posicionament flotant</h2>
+                <img class="float_item" src="images/twitter.png">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacinia euismod dui sed fermentum. Etiam nec erat nisi, at ultrices felis. Curabitur neque metus, ultricies at sodales a, euismod sed tortor. Ut varius pharetra tellus, quis fringilla nisi vulputate id. Donec non blandit massa. Sed vehicula augue quis ligula vestibulum vel pharetra felis fringilla. Nullam eu placerat sem. Curabitur urna nunc, faucibus ac semper ac, fringilla a lorem. Fusce molestie aliquam nulla eget varius.
+
+Vestibulum volutpat arcu ut tellus gravida vehicula. Ut tincidunt consectetur ligula id convallis. Morbi gravida egestas purus at tincidunt. Vestibulum non dui metus, ac facilisis magna. Phasellus vitae ipsum ligula, id placerat enim. Quisque pellentesque laoreet felis, at tempus mauris scelerisque feugiat. Aliquam gravida pulvinar mi, eget interdum urna lacinia ut. Aliquam sed lectus eros. Suspendisse potenti. Nulla facilisi. Donec id pulvinar mauris. Aenean sit amet imperdiet purus. Pellentesque quis ligula elit. Praesent at mi orci, et sagittis urna.
+
+Duis eget consequat erat. Nulla ultricies massa pharetra sapien aliquet sollicitudin. Quisque id felis enim, in aliquet metus. Quisque facilisis mollis mauris, ut volutpat sem ultricies vitae. Nam erat sapien, ultrices ac euismod eget, aliquam id ligula. Quisque sagittis iaculis fringilla. Praesent fringilla erat sodales erat mollis quis lacinia risus feugiat. Vivamus eget dolor et libero egestas dapibus quis id quam. Cras iaculis diam id nibh rutrum pulvinar. Praesent at ante et sem facilisis iaculis. Nulla facilisis erat ut tortor tincidunt rhoncus. Nulla nibh nisl, sagittis gravida scelerisque vitae, tristique nec magna. Nullam molestie dolor nec enim tincidunt aliquet.
+
+Nam ac magna enim. Aliquam cursus massa lacus, eu venenatis odio. Ut in nibh odio, non commodo arcu. Sed interdum iaculis elit et venenatis. Fusce rhoncus condimentum tortor ac luctus. Fusce erat nibh, congue eget adipiscing in, tincidunt et purus. Nam mi lorem, ultrices sit amet faucibus sed, tincidunt rhoncus nisl.
+
+Nulla facilisi. Quisque imperdiet ullamcorper ligula eget vulputate. Nullam dapibus, erat eget tempus pellentesque, enim felis eleifend neque, sed eleifend nunc nisl id nisi. Sed venenatis gravida lectus at congue. Vivamus blandit pellentesque nunc ut mattis. Nulla facilisi. Proin cursus nunc id diam consectetur ac posuere quam congue. Sed at nisi at odio pretium egestas. Sed volutpat ultricies est, ut rutrum diam semper ut. Sed adipiscing tristique tortor, non sagittis sem tempor eget. Etiam ac nulla purus. Praesent sed massa enim, in congue odio. Sed vitae erat a urna tempus tincidunt ut et sem. Duis et lectus eget turpis tristique molestie in eu ante. Ut ac tellus leo, vitae convallis orci. Vivamus vehicula dui at lacus varius ultrices.</p>
+               
+                <h3>Auto posicionament</h3>
+                <div style="position: relative;height: 300px; overflow: auto;">
+                    <div class="float_item_left"><p>A</p></div>
+                    <div class="float_item_left"><p>B</p></div>
+                    <div class="float_item_left"><p>C</p></div>
+                    <div class="float_item_left"><p>D</p></div>
+                    <div class="float_item_left"><p>E</p></div>
+                    <div class="float_item_left"><p>A</p></div>
+                    <div class="float_item_left"><p>B</p></div>
+                    <div class="float_item_left"><p>C</p></div>
+                    <div class="float_item_left"><p>D</p></div>
+                    <div class="float_item_left"><p>E</p></div>
+                </div>
+                <hr>
+            </div>
+            
+            <!-- Alineament -->
+            <div class="tutoItem">
+                <h2>Alineament</h2>
+                <h3>Block centrat</h3>
+                <div class="divZ1_center">
+                    
+                </div>
+                <hr>
+            </div>
+            
+            <!-- Pseudo class -->
+            <div class="tutoItem">
+                <h2>Pseudo classes</h2>
+                <h3>p:first-child</h3>
+                <div class="pseudo_clas">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                </div>
+                <h3>p &gt i:first-child</h3>
+                <div class="pseudo_clas_b">
+                    <p>Lorem ipsum <i>dolor</i> sit amet, <i>consectetur</i> adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                    <p>Lorem ipsum <i>dolor</i> sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                </div>
+                <h3>p:first-child i</h3>
+                <div class="pseudo_clas_c">
+                    <p>Lorem ipsum <i>dolor</i> sit amet, <i>consectetur</i> adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                    <p>Lorem ipsum <i>dolor</i> sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                </div>
+                <hr>
+            </div>
+            
+             <!-- Pseudo elemet -->
+            <div class="tutoItem">
+                <h2>Pseudo element</h2>
+                <h3>p:first-line</h3>
+                <div class="pseudo_el">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                </div>
+                <h3>p:first-letter</h3>
+                <div class="pseudo_el_b">
+                    <p>Lorem ipsum <i>dolor</i> sit amet, <i>consectetur</i> adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                    <p>Lorem ipsum <i>dolor</i> sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                </div>
+                <h3>Before/After</h3>
+                    <h2 class="my_h2">Before</h2>
+                    <h2 class="my_h3">After</h2>
+                <hr>
+            </div>
+             
+             <!-- Pseudo elemet -->
+            <div class="tutoItem">
+                <h2>Barra de navegació</h2>
+                <ul class="my_ul">
+                    <li><a href="index_css.html">Home</a></li>
+                    <li><a href="index_css.html">Noticies</a></li>
+                    <li><a href="index_css.html">Contacte</a></li>
+                    <li><a href="index_css.html">Sobre...</a></li>
+                </ul>
+                
+                <ul class="my_ul_b">
+                    <li><a href="index_css.html">Home</a></li>
+                    <li><a href="index_css.html">Noticies</a></li>
+                    <li><a href="index_css.html">Contacte</a></li>
+                    <li><a href="index_css.html">Sobre...</a></li>
+                </ul>
+                <br>
+                <hr>
+            </div>
+             
+             <!-- Pseudo elemet -->
+            <div class="tutoItem">
+                <h2>Opacitat i transparència</h2>
+                <h3>Transparencia</h3>
+                <table style="width: 100%;">
+                    <tr>
+                        <td><img src="images/twitter.png"></td>
+                        <td><img class="img_transp" src="images/twitter.png"></td>
+                    </tr>
+                </table>
+                <hr>
+            </div>
+            
+            <!-- link cap a CSS -->
+            <div class="tutoItem">
+                <a href="index.html">Tornar al tutorial d'HTML</a>
+            </div>
+            <br>
+        </div>
+    </body>
+</html>
