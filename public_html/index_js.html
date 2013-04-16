@@ -6,29 +6,29 @@ and open the template in the editor.
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<!--<meta http-equiv="refresh" content="10">-->
-	<meta name="author" content="Jordi Mas">
-	<meta name="description" content="Pàgina web per apendre JavaScript">
-	<title>JavaScript Tutorial</title>
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/normalize_style.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--<meta http-equiv="refresh" content="10">-->
+        <meta name="author" content="Jordi Mas">
+        <meta name="description" content="Pàgina web per apendre JavaScript">
+        <title>JavaScript Tutorial</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/normalize_style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
         <div id="headerTuto">
             <!-- Panell capçalera -->
             <table style="width: 100%">
-                    <tr>
-                            <td><h2 title="Tooltip">Això és un tutorial per apendre JavaScript. Actualment estàs en aquest <a href="http://www.w3schools.com/js/default.asp" target="_blank">punt</a></h2></td>
-                            <td><a href="#tips"><img src="images/piu.png"></a></td>	
-                    </tr>
+                <tr>
+                    <td><h2 title="Tooltip">Això és un tutorial per apendre JavaScript. Actualment estàs en aquest <a href="http://www.w3schools.com/js/default.asp" target="_blank">punt</a></h2></td>
+                    <td><a href="#tips"><img src="images/piu.png"></a></td>	
+                </tr>
             </table>
         </div>
         <div class="panelTuto"><a id="tips"></a>
             <!-- Panell de treball -->
             <h1 style="text-align: center">Pàgina web per apendre JavaScript</h1>
             <br>
-            
+
             <!-- Etiqueta script -->
             <div class="tutoItem">
                 <script>
@@ -36,12 +36,136 @@ and open the template in the editor.
                     document.write("<p>Codi html generat per JavaScript</p>");
                 </script>
                 <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                <button onclick="onClick()">Click me!</button>
+                <p>4 + 2 = <span id="result"></span></p>
                 <script>
-                    document.getElementById("lorem").innerHTML="My First JavaScript";
+                    var str = "hola";
+                    var x = 4;
+                    var b = true;
+                    var arrays = ["A", "B", "C"];
+                    var cotxe = {id: 1, marca: "Honda", model: "Civic"};
+                    var y = null;
+                    var str_obj = new String;
+                    str_obj = "Jordi";
+                    document.getElementById("lorem").innerHTML = "My First JavaScript";
+                    function onClick() {
+                        document.write("Oops! Què ha passat? El fitxer html ja ha estat interpretat");
+                    }
+                    function addFunction(a, b) {
+                        return a + b;
+                    }
+                    document.getElementById("result").innerHTML = addFunction(4, 2);
+                    document.write("<p>String: " + str + "</p>");
+                    document.write("<p>Numero: " + x + "</p>");
+                    document.write("<p>Boolea: " + b + "</p>");
+                    document.write("<p>Cadenes: " + arrays + "</p>");
+                    document.write("<p>Objecte: id: " + cotxe.id + ", marca: " + cotxe.marca + ", model: " + cotxe.model + "</p>");
+                    document.write("<p>Valor null: " + y + "</p>");
+                    document.write("<p>Objecte tipus String: " + str_obj + " amb una length de " + str_obj.length + "</p>");
+                </script>
+                <script>
+                    var person = new Object();
+                    person.nom = "Jordi";
+                    person.pri_cognom = "Mas";
+                    person.seg_cognom = "Guday";
+                    person.any_naix = 1980;
+                    person.mascle = true;
+
+                    document.write("<h2>" + person.nom + " " + person.pri_cognom + " " + person.seg_cognom + "</h2>");
+                    document.write("<p>Any de naixament: " + person.any_naix + "</p>");
+                    if (person.mascle) {
+                        document.write("<p>Mascle</p>");
+                    } else {
+                        document.write("<p>Femella</p>");
+                    }
+
+                    document.write("Variable global declarada en altres scripts: str -> " + str);
+                </script>
+                <h2>Operadors</h2>
+                <script>
+                    if (str !== "adeu") {
+                        document.write("<p>str no és igual a 'adeu'</p>");
+                    }
+                    var day = new Date().getDay();
+                    var str_day;
+                    switch (day) {
+                        case 0:
+                            str_day = "Dilluns";
+                            break;
+                        case 1:
+                            str_day = "Dimarts";
+                            break;
+                        case 2:
+                            str_day = "Dimecres";
+                            break;
+                        case 3:
+                            str_day = "Dijous";
+                            break;
+                        case 4:
+                            str_day = "Divendres";
+                            break;
+                        case 5:
+                            str_day = "Dissabte";
+                            break;
+                        case 6:
+                            str_day = "Diumenge";
+                            break;
+                    }
+
+                    document.write("<p>Avui és " + str_day + "</p>");
+                </script>
+                <script>
+                    var items_a = new Object();
+                    items_a.tracte = "Sr";
+                    items_a.nom = "Jordi";
+                    items_a.any_naixament = 1980;
+
+                    var items_b = new Object();
+                    items_b.tracte = "Sra";
+                    items_b.nom = "Elisenda";
+                    items_b.any_naixament = 1986;
+
+                    var items_c = new Object();
+                    items_c.tracte = "Sr";
+                    items_c.nom = "Jaume";
+                    items_c.any_naixament = 1953;
+
+                    var llistaItems = new Array();
+                    llistaItems[0] = items_a;
+                    llistaItems[1] = items_b;
+                    llistaItems[2] = items_c;
+
+                    function edat(any) {
+                        var date = new Date();
+
+                        return date.getFullYear() - any;
+                    }
+
+                    document.write('<table class="table_style">');
+                    document.write("<tr><th>Tracte</th><th>Nom</th><th>Edat</th><tr>");
+                    for (var i = 0; i < llistaItems.length; i++) {
+                        document.write("<tr>");
+                        document.write("<td>" + llistaItems[i].tracte + "</td>");
+                        document.write("<td>" + llistaItems[i].nom + "</td>");
+                        document.write("<td>" + edat(llistaItems[i].any_naixament) + "</td>");
+                        document.write("</tr>");
+                    }
+                    document.write('</table>');
+                </script>
+                <script>
+                    try {
+                        var r = parseInt(Math.random()*10+"");
+                        document.write("<p>Valor aleatori: " + r + "</p>");
+                        if (r == 7) {
+                            throw "r is 0";
+                        }
+                    } catch (err) {
+                        alert("S'ha produit un error: " + err);
+                    }
                 </script>
                 <hr>
             </div>
-       
+
             <!-- link cap a CSS -->
             <div class="tutoItem">
                 <table style="width: 100%;">
