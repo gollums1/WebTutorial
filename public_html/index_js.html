@@ -1,0 +1,56 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<!--<meta http-equiv="refresh" content="10">-->
+	<meta name="author" content="Jordi Mas">
+	<meta name="description" content="Pàgina web per apendre JavaScript">
+	<title>JavaScript Tutorial</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize_style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="headerTuto">
+            <!-- Panell capçalera -->
+            <table style="width: 100%">
+                    <tr>
+                            <td><h2 title="Tooltip">Això és un tutorial per apendre JavaScript. Actualment estàs en aquest <a href="http://www.w3schools.com/js/default.asp" target="_blank">punt</a></h2></td>
+                            <td><a href="#tips"><img src="images/piu.png"></a></td>	
+                    </tr>
+            </table>
+        </div>
+        <div class="panelTuto"><a id="tips"></a>
+            <!-- Panell de treball -->
+            <h1 style="text-align: center">Pàgina web per apendre JavaScript</h1>
+            <br>
+            
+            <!-- Etiqueta script -->
+            <div class="tutoItem">
+                <script>
+                    document.write("<h2>Etiqueta &ltscript&gt</h2>");
+                    document.write("<p>Codi html generat per JavaScript</p>");
+                </script>
+                <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis enim sapien, eu rhoncus lacus. Suspendisse in augue quam, ut sodales velit. Sed in erat diam. Nam suscipit augue a magna porttitor euismod. Integer non felis lacus, nec laoreet ligula. Nunc fringilla quam viverra nisi varius porttitor. Pellentesque condimentum laoreet nisl, vel venenatis velit semper vel. In mollis blandit nisi nec consectetur. Proin nisi elit, ornare sit amet elementum vel, tincidunt quis mauris. Cras convallis tempor ante, non tincidunt arcu condimentum ut. Mauris eros massa, lobortis vitae congue eget, varius et magna. Nunc in turpis dolor, non luctus justo. Nulla sit amet eros eu quam rutrum porttitor vel ut massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur massa felis, aliquet at commodo et, tempus sed dui.</p>
+                <script>
+                    document.getElementById("lorem").innerHTML="My First JavaScript";
+                </script>
+                <hr>
+            </div>
+       
+            <!-- link cap a CSS -->
+            <div class="tutoItem">
+                <table style="width: 100%;">
+                    <tr>
+                        <td align="left"><a href="index_css.html">Tutorial CSS</a></td>
+                        <!--<td align="right"><a href="index_js.html">Tutorial Javascript</a></td>-->
+                    </tr>
+                </table>
+            </div>            
+        </div>
+    </body>
+</html>
